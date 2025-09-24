@@ -1,0 +1,15 @@
+concept,korean_name,greek_word,greek_transliteration,frequency_ch1,theological_importance,contrast_pair,section_position,verse_references
+Word,말씀,λόγος,logos,3,10,flesh,beginning,"1:1,1:14"
+God,하나님,θεός,theos,4,10,human,throughout,"1:1,1:2,1:6,1:12"
+Light,빛,φῶς,phos,5,9,darkness,middle,"1:4,1:5,1:7,1:8,1:9"
+Life,생명,ζωή,zoe,4,9,death,middle,"1:4,1:12,1:13"
+Darkness,어둠,σκότος,skotos,2,3,light,middle,1:5
+World,세상,κόσμος,kosmos,3,7,heaven,throughout,"1:9,1:10"
+Believe,믿다,πιστεύω,pisteuo,3,8,reject,latter,"1:7,1:12"
+Children,자녀,τέκνα,tekna,1,8,servants,latter,1:12
+Grace,은혜,χάρις,charis,2,9,law,ending,"1:14,1:16"
+Truth,진리,ἀλήθεια,aletheia,2,9,falsehood,ending,"1:14,1:17"
+Glory,영광,δόξα,doxa,2,8,shame,middle,1:14
+Flesh,육신,σάρξ,sarx,1,7,spirit,middle,"1:13,1:14"
+Blood,피,αἷμα,haima,1,6,spirit,middle,1:13
+Will,뜻,θέλημα,thelema,2,7,human_will,middle,1:13

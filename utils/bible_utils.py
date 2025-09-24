@@ -32,15 +32,6 @@ def load_twelve_tribes() -> pd.DataFrame:
     data_path = PROJECT_ROOT / "data/examples/ch01_tribes.csv"
     return pd.read_csv(data_path, encoding='utf-8')
 
-def load_twelve_tribes_n() -> pd.DataFrame:
-    """12지파 기본 정보 로드
-
-    Returns:
-        DataFrame: 12지파 정보 (이름, 히브리어, 의미, 어머니 등)
-    """
-    data_path = PROJECT_ROOT / "data/examples/bible_KJV.csv"
-    return pd.read_csv(data_path, encoding='utf-8')
-
 def load_exodus() -> pd.DataFrame:
     df = pd.read_csv(PROJECT_ROOT / 'data' / 'examples' / 'bible_KJV.csv')
     exodus = df[df["book"].str.strip().str.lower() == "exodus"].copy()

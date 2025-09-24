@@ -1,0 +1,66 @@
+# JesusBornd 판다스편 설정 파일
+# "태초에 말씀이 계시니라" - 모든 설정의 시작점
+
+project:
+  name: "JesusBornd Pandas Edition"
+  version: "1.0.0"
+  description: "성경 속 하나님의 질서를 판다스로 발견하는 40일 여정"
+  author: "신동혁(Dave)"
+  github: "https://github.com/sambuza/exodus-pandas01"
+
+# 데이터 파일 설정
+data:
+  encoding: "utf-8"
+  csv_separator: ","
+  date_format: "%Y-%m-%d"
+  paths:
+    raw: "data/raw"
+    processed: "data/processed"
+    examples: "data/examples"
+
+# 성경 텍스트 설정
+bible:
+  default_translation:
+    korean: "개역개정"
+    english: "KJV"
+  books:
+    exodus:
+      chapters: 40
+      key_themes: ["해방", "언약", "성막", "율법"]
+    john:
+      chapters: 21
+      key_themes: ["말씀", "빛", "생명", "사랑"]
+
+# 분석 매개변수
+analysis:
+  spiritual_metrics:
+    growth_scale: [1, 10]        # 영적 성장 척도
+    importance_scale: [1, 10]    # 신학적 중요도 척도
+    frequency_threshold: 2       # 최소 등장 빈도
+  patterns:
+    leah_stages: ["관계", "소통", "연합", "예배"]
+    john_contrasts: ["빛", "어둠", "믿음", "거절", "은혜", "율법"]
+
+# 시각화 설정
+visualization:
+  korean_font: "NanumGothic"
+  figure_size: [10, 6]
+  dpi: 300
+  color_scheme:
+    primary: "#800080"      # Purple - 왕권
+    secondary: "#228B22"    # Green - 생명
+    accent: "#9B30FF"       # Violet - 성령
+    warning: "#FF6B35"      # Orange - 경고
+    success: "#4CAF50"      # Green - 성공
+
+# 한글 처리
+korean:
+  font_family: ["NanumGothic", "Malgun Gothic", "Arial Unicode MS"]
+  remove_spaces: true
+  normalize_text: true
+
+# 디버그 및 로깅
+debug:
+  log_level: "INFO"
+  save_intermediate: true
+  verbose_analysis: false

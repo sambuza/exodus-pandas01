@@ -1,13 +1,9 @@
-# utils/font_config.py
-"""
-JesusBornd 프로젝트 한글 폰트 설정
-모든 시각화 파일에서 이 설정을 import하여 사용
-"""
-
-from matplotlib import rc
-rc('font', family='Malgun Gothic')
 
 import matplotlib.pyplot as plt
+import matplotlib.font_manager as fm
+
+# JesusBornd 한글 폰트 설정
+plt.rcParams['font.family'] = 'Malgun Gothic'
 plt.rcParams['axes.unicode_minus'] = False
 
-print("✅ 한글 폰트 설정 로드 (Malgun Gothic)")
+print("✅ JesusBornd 한글 폰트 설정 로드 완료: Malgun Gothic")

@@ -127,7 +127,7 @@ class IntegrationTestRunner:
         # 현재는 Chapter 01만으로 파이프라인 테스트
 
         try:
-            from chapters.ch01.main import run_chapter01
+            from chapters.ch01.__main__ import run_chapter01
 
             self.start_time = time.time()
             results = run_chapter01(interactive=False, user_name="통합테스트")

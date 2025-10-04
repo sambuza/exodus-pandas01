@@ -1,0 +1,20 @@
+# IDE
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+
+# Output files
+*.json
+*.pdf
+korean_font_test.png
+.matplotlibrc
+
+# Data files
+*.csv
+
+# Test files
+test_write.py

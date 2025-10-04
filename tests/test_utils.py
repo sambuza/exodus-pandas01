@@ -7,6 +7,7 @@ import pytest
 import pandas as pd
 import time
 from pathlib import Path
+from utils import bible_utils
 
 from utils.bible_utils import (
     load_config,

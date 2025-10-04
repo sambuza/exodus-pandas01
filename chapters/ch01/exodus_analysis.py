@@ -2,7 +2,7 @@
 출애굽기 1장 분석 모듈
 12지파의 영적 패턴과 하나님의 섭리 분석
 
-"이스라엘의 아들들의 이름은 이러하니라" (출 1:1)
+"야곱과 함께 각기 권속을 데리고 애굽에 이른 이스라엘 아들들의 이름은 이러하니" (출 1:1)
 """
 
 import pandas as pd
@@ -27,7 +27,7 @@ class TwelveTribesAnalyzer:
         """분석기 초기화"""
         self.tribes_data = load_twelve_tribes()
         self.leah_analysis = None
-        self.haha = load_exodus().head(100)
+
 
     def create_basic_dataframe(self) -> pd.DataFrame:
         """기본 12지파 DataFrame 생성 (책의 4.1절)

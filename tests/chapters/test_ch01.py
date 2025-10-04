@@ -13,7 +13,7 @@ from chapters.ch01.exodus_analysis import TwelveTribesAnalyzer
 from chapters.ch01.john_analysis import JohnChapter1Analyzer
 from chapters.ch01.spiritual_dna import PersonalSpiritualDNA
 from chapters.ch01.visualizations import ChapterVisualizations
-from chapters.ch01.main import run_chapter01
+from chapters.ch01.__main__ import run_chapter01
 
 @pytest.mark.chapter01
 class TestTwelveTribesAnalyzer:

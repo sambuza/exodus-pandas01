@@ -22,6 +22,10 @@ def load_config() -> Dict:
     with open(config_path, 'r', encoding='utf-8') as f:
         return yaml.safe_load(f)
 
+def load_bible() -> pd.DataFrame:
+    df = pd.read_csv(PROJECT_ROOT / 'data' / 'raw' / 'bible_KJV.csv')
+
+    return df
 
 def load_twelve_tribes() -> pd.DataFrame:
     """12지파 기본 정보 로드
@@ -33,7 +37,7 @@ def load_twelve_tribes() -> pd.DataFrame:
     return pd.read_csv(data_path, encoding='utf-8')
 
 def load_exodus() -> pd.DataFrame:
-    df = pd.read_csv(PROJECT_ROOT / 'data' / 'examples' / 'bible_KJV.csv')
+    df = pd.read_csv(PROJECT_ROOT / 'data' / 'raw' / 'bible_KJV.csv')
     exodus = df[df["book"].str.strip().str.lower() == "exodus"].copy()
     return exodus
 
@@ -257,3 +261,4 @@ if __name__ == "__main__":
     print(f"✅ 빛 vs 어둠 분석 완료: {light_analysis['ratio']:.1f}:1 비율")
 
     print("🎉 모든 테스트 통과!")
+
